@@ -4,7 +4,7 @@ $(function (){
 });
 
 $(function(){
-    let url = "";
+    let url = "https://jsonplaceholder.typicode.com/photos";
 
 
     $("getPost").on("click", function (){
