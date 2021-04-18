@@ -1,1 +1,1 @@
-<?php include_once('praktikum_jquery.html');
+<?php include_once('index.html');

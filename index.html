@@ -1,0 +1,334 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+body {
+  margin: 0;
+  font-family: 'Raleway';
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+a {
+  color:white ;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+article {
+  padding:0 1em;
+}
+
+section{
+  margin: 1em;
+  padding: 1em;
+}
+
+header, main, footer {
+  margin: 0 auto;
+}
+
+header {
+  padding: 2em;
+  text-align: center;
+  background-image: url('BackGround.jpg');
+  background-size: cover;
+  background-position: fixed;
+  color: white;
+}
+
+header section {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+header img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h3, h4 {
+  font-weight: bold;
+}
+
+main {
+  max-width: 1140px;
+  color: grey;
+}
+
+main section:not(:last-child) {
+  border-bottom: 1px solid grey;
+}
+
+.fab {
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+
+a .fab {
+  color: black;
+}
+
+.course, .skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.course .title {
+  color: black;
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 33%;
+}
+
+.course .descrition {
+  -ms-flex: 0 0 66.6%;
+  flex: 0 0 66.6%;
+  max-width: 66.6%;
+}
+
+.course .descrition p {
+  padding-left: 1em;
+}
+
+.skills .column {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.skills .column ul, ul.job-description {
+  list-style-type: none;
+}
+
+.skills .column ul > li:before {
+  content: "►";
+  padding-right: 0.5em;
+  color: grey;
+}
+
+.school, .Organization-title {
+  text-transform: capitalize;
+}
+
+.school span, .Organization span {
+  color: black;
+  text-decoration: underline;
+}
+
+ul.Org-description li:before, ul.Sch-description li:before{
+  content: "✔";
+  padding-right: 0.5em;
+  color: grey;
+}
+
+footer {
+ padding: 1em 1.5em;
+ background: grey;
+ color: white;
+ text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .course {
+    display: block;
+  }
+
+  .course .title, .course .descrition {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .skills {
+    display: block;
+  }
+
+  .skills .column {
+    max-width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 1</title>
+</head>    
+
+<body>
+  <header>
+    <div>
+      <img src="photo_2021-03-15_20-55-48.jpg" />
+    </div>
+    <h1>Curriculum Vitae</h1>
+    <section>
+      <p>Hello Friends, Let's Talk About Me</p>
+      <a href="https://twitter.com/FuadiMumtazul" target="_blank"><img src="Twitter.png" width="25px">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/mumtazulfuadi/" target="_blank"><img src="Instagram.png" width="25px">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://github.com/itas13" target="_blank"><img src="Github_LOGO.png" width="25px">
+        <i class="fab fa-github-alt"></i>
+      </a>
+    </section>
+  </header>
+  <main>
+    <section>
+      <h3>Profile</h3>
+      <article class='course'>
+        <div class='title'>
+          <h4>NAMA</h4>
+        </div>
+        <div class="description">
+          <p>Mumtazul Fuadi Nasution</p>
+        </div>
+      </article>
+      <article class='course'>
+        <div class='title'>
+          <h4>TTL</h4>
+        </div>
+        <div class="description">
+          <p>Yogyakarta, 03 Januari 2002</p>
+        </div>
+      </article>
+      <article class='course'>
+        <div class='title'>
+          <h4>ALAMAT</h4>
+        </div>
+        <div class="description">
+          <p>Perum Duyung Permai, Blok G/12</p>
+        </div>
+      </article>
+      <article class='course'>
+        <div class='title'>
+          <h4>ASAL</h4>
+        </div>
+        <div class="description">
+          <p>Kota Pekanbaru, Provinsi Riau</p>
+        </div>
+      </article>
+      <article class='course'>
+        <div class='title'>
+          <h4>HOBBY</h4>
+        </div>
+        <div class="descripxtion">
+          <p>Menyanyi, Mendengarkan Lagu, Menulis Lagu</p>
+        </div>
+      </article>
+    </section>
+    <section>
+      <h3>Keahlian</h3>
+      <div class='skills'>
+        <div class='column'>
+          <ul>
+            <li>UX Design</li>
+            <li>Networking</li>
+            <li>Mobile Programming</li>
+            <li>Music Maker & FL studio 20</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Riwayat Pendidikan</h3>
+      <article>
+        <div class='school'>
+          <span max width="25%">2019-sekarang</span> <strong >Universitas Muhammadiyah Yogyakarta</strong>
+        </div>
+        <div class="Sch-description">
+          <li>Jurusan : Teknik Informasi</li>
+        </div>
+      </article>
+      <article>
+        <div class='school'>
+          <span max width="25%">2016-2019</span> <strong>SMAN 2 Pekanbaru</strong>
+        </div>
+      </article>
+      <article>
+        <div class='school'>
+          <span max width="25%">2013-2016</span> <strong>MTsN Andalan Pekanbaru</strong>
+        </div>
+      </article>
+      <article>
+        <div class='school'>
+          <span max width="25%">2007-2013</span> <strong>SDN 81 Pekanbaru</strong>
+        </div>
+      </article>
+      <article>
+        <div class='school'>
+          <span max width="25%">2006-2007</span> <strong>TK Mutiara Pekanbaru</strong>
+        </div>
+      </article>
+    </section>
+    <section>
+      <h3>Pengalaman Organisasi</h3>
+      <article>
+        <article>
+          <div class='Organization'>
+            <span max width="25%">2020-sekarang</span> <strong>KMTI</strong>
+          </div>
+        </article>
+        <article>
+          <div class='Organization'>
+            <span max width="25%">2016-2019</span> <strong>Basket</strong>
+          </div>
+        </article>
+        <article>
+          <div class='Organization'>
+            <span max width="25%">2016-2018</span> <strong>OSIS</strong>
+          </div>
+          <div class="Org-description"> 
+            <li>Kepala Seksi Penertiban OSIS</li>
+          </div>
+        </article>
+        <article>
+          <div class='Organization'>
+            <span max width="25%">2016-2017</span> <strong>Paskibra</strong>
+          </div>
+        </article>
+    </section>
+    <section>
+      <h3>Motivasi</h3>
+      <h2>"Motivasi ?? lebih tepatnya sebuah dedikasi dalam diri untuk terus belajar, 
+        kalau motivasi yaa ada Orang tua, Saudara dan Teman-teman, serta cita-cita"</h2>
+    </section>
+  </main>
+  <footer>
+    <p>Thank You and Keep Support Me !! &#128512; &#128512; &#128512;</p>
+  </footer>
+</body>
+</html>
